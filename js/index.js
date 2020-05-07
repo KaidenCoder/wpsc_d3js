@@ -18,7 +18,7 @@ const xAxisGroup = graph.append('g')
     .attr('transform', `translate(0, ${graphHeight})`)
 const yAxisGroup = graph.append('g')
 
-d3.json('puzzleindividualsdata.json').then(data => {
+d3.json('/data/sudokuindividualsdata.json').then(data => {
 
     const y = d3.scaleLinear()
         .domain([0, d3.max(data, d => d.medals)])
@@ -41,7 +41,7 @@ d3.json('puzzleindividualsdata.json').then(data => {
 
     rects.attr('width', x.bandwidth)
         .attr('height', d => graphHeight - y(d.medals))
-        .attr('fill', 'lightgreen')
+        .attr('fill', 'skyblue')
         .attr('x', d => x(d.name))
 
     // append the enter selection to the DOM  
@@ -49,7 +49,7 @@ d3.json('puzzleindividualsdata.json').then(data => {
         .append('rect')
         .attr('width', x.bandwidth)
         .attr('height', d => graphHeight - y(d.medals))
-        .attr('fill', 'lightgreen')
+        .attr('fill', 'skyblue')
         .attr('x', d => x(d.name))
         .attr('y', d => y(d.medals));
 

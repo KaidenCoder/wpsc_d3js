@@ -3,74 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+    <title>Ninja Wonga</title>
     <style>
+        h2,
+        p {
+            margin: 10px 0;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        .tip {
+            padding: 10px;
+            background: #333;
+            color: #fff;
+        }
+
+        .tip .delete {
+            color: hotpink;
+            font-size: 0.8em;
+        }
+
         div {
             text-align: center;
             justify-content: center;
         }
 
+        .puzzle {
+            padding-top: 30px;
+            margin-bottom: -70px;
+        }
+
         @media only screen and (max-width: 600px) {
             div {
-
+                padding-top: 5px;
                 text-align: center;
                 justify-content: center;
                 transform: scale(1);
                 resize: both;
                 overflow: auto;
             }
+
+            .puzzle {
+                margin-bottom: -70px;
+            }
         }
     </style>
-    <title>WSC Individual records</title>
 </head>
 
-<body>
-
+<body class="indigo">
 
     <!-- As a heading -->
     <nav class="navbar navbar-light bg-light justify-content-center">
-        <span class="navbar-brand mb-0 h1">WPSC Individual medals</span>
+        <span class="navbar-brand mb-0 h1">WPSC Country medals</span>
     </nav>
 
     <ul class="nav justify-content-center">
         <li class="nav-item">
-            <a class="nav-link active" href="/index.html"><span style="font-size: 10px;">Individual medals
+            <a class="nav-link active" href="/"><span style="font-size: 10px;">Individual medals
                     (Sudoku)</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/countrysudoku.html"><span style="font-size: 10px;">Country medals
+            <a class="nav-link" href="/ui/countrysudoku.html"><span style="font-size: 10px;">Country medals
                     (Sudoku)</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/individualpuzzle.html"><span style="font-size: 10px;">Individual medals
+            <a class="nav-link" href="/ui/individualpuzzle.html"><span style="font-size: 10px;">Individual medals
                     (Puzzle)</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/countrypuzzle.html"><span style="font-size: 10px;">Country medals
+            <a class="nav-link" href="/ui/countrypuzzle.html"><span style="font-size: 10px;">Country medals
                     (Puzzle)</span></a>
         </li>
-
     </ul>
-
-
 
     <div class="container ">
         <div class="jumbotron justify-content-center ">
             <div class="container">
-                <h4 class="display-5 justify-content-center"> Total Individual Sudoku Medals in World Sudoku
+                <h4 class="display-5 justify-content-center"> Total Country Medals in World Puzzle
                     Championship </h4>
                 <p class="text-muted justify-content-center" style="font-size: 10px;">
-                    Note: This does not include U-18 and Over 50 medals.
+                    Note: This only include World Puzzle Championship.
                     Total medals include Gold, Silver and Bronze.
                     <a href="https://en.wikipedia.org/wiki/World_Puzzle_Championship" target="_blank">Source</a>
                 </p>
             </div>
         </div>
 
+        <div class="container section">
+            <div class="row">
 
-        <div class="canvas">
+                <div class="col-12 m5 push-m1">
+                    <div class="canvas puzzle">
+
+                    </div>
+                </div>
+
+            </div>
         </div>
         <div class="alert alert-light text-muted"
             style="font-size: 8px; padding-top: 20px; text-align: center; justify-content: center;">
@@ -79,17 +115,16 @@
             <div><i class=" fa fa-linkedin" style="font-size: 10px;"></i>
             </div>
         </div>
-
     </div>
-    <!-- <script src="https://d3js.org/d3.v5.js"></script> -->
+
+
+
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-    <script src="indipuzzle.js"></script>
-
+    <!-- <script src="index.js"></script> -->
+    <script src="/js/puzzlecountry.js"></script>
 
 
 </body>

@@ -1,0 +1,33 @@
+[{
+        "name": "Japan",
+        "cost": 11
+    },
+    {
+        "name": "USA",
+        "cost": 2
+    },
+    {
+        "name": "Czechia",
+        "cost": 10
+    },
+    {
+        "name": "Germany",
+        "cost": 5
+    },
+    {
+        "name": "Slovakia",
+        "cost": 1
+    },
+    {
+        "name": "Serbia",
+        "cost": 1
+    },
+    {
+        "name": "China",
+        "cost": 8
+    },
+    {
+        "name": "France",
+        "cost": 1
+    }
+]

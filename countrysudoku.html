@@ -1,0 +1,133 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+    <title>Country Medals</title>
+    <style>
+        h2,
+        p {
+            margin: 10px 0;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        .tip {
+            padding: 10px;
+            background: #333;
+            color: #fff;
+        }
+
+        .tip .delete {
+            color: hotpink;
+            font-size: 0.8em;
+        }
+
+        div {
+            text-align: center;
+            justify-content: center;
+        }
+
+        .sudoku {
+            padding-top: 30px;
+            margin-bottom: -100px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            div {
+                padding-top: 5px;
+                text-align: center;
+                justify-content: center;
+                transform: scale(1);
+                resize: both;
+                overflow: auto;
+            }
+
+            .sudoku {
+
+                margin-bottom: -100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- As a heading -->
+    <nav class="navbar navbar-light bg-light justify-content-center">
+        <span class="navbar-brand mb-0 h1">WPSC Country medals</span>
+    </nav>
+
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="/index.html"><span style="font-size: 10px;">Individual medals
+                    (Sudoku)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/countrysudoku.html"><span style="font-size: 10px;">Country medals
+                    (Sudoku)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/individualpuzzle.html"><span style="font-size: 10px;">Individual medals
+                    (Puzzle)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/countrypuzzle.html"><span style="font-size: 10px;">Country medals
+                    (Puzzle)</span></a>
+        </li>
+    </ul>
+
+    <div class="container ">
+        <div class="jumbotron justify-content-center ">
+            <div class="container">
+                <h4 class="display-5 justify-content-center"> Total Country Medals in World Sudoku
+                    Championship </h4>
+                <p class="text-muted justify-content-center" style="font-size: 10px;">
+                    Note: This only include World Sudoku Championship.
+                    Total medals include Gold, Silver and Bronze.
+                    <a href="https://en.wikipedia.org/wiki/World_Sudoku_Championship" target="_blank">Source</a>
+                </p>
+            </div>
+        </div>
+        <!-- //style="background-color:rgba(48,58,166, 0.4);" -->
+        <div class="container section">
+            <div class="row">
+
+                <div class="col-12 m5 push-m1">
+                    <div class="canvas sudoku">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="alert alert-light text-muted"
+            style="font-size: 8px; padding-top: 20px; text-align: center; justify-content: center;">
+            Made with <i class="fa fa-heart" style="font-size:10px;color:red"></i> by <a
+                href="https://www.linkedin.com/in/khaidemsandip/" target="_blank">Kurosaki</a>
+            <div><i class=" fa fa-linkedin" style="font-size: 10px;"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <script src="countrysudoku.js"></script>
+
+
+</body>
+
+</html>

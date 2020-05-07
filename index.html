@@ -1,0 +1,131 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <style>
+        /* canvas {
+            background-position: 0%;
+        } */
+        div {
+            text-align: center;
+            justify-content: center;
+        }
+
+        @media only screen and (max-width: 600px) {
+            div {
+                /* padding-right: 400px; */
+                text-align: center;
+                justify-content: center;
+                transform: scale(1);
+                resize: both;
+                overflow: auto;
+            }
+        }
+    </style>
+    <title>WSC Individual records</title>
+</head>
+
+<body>
+    <!-- As a heading -->
+    <nav class="navbar navbar-light bg-light justify-content-center">
+        <span class="navbar-brand mb-0 h1">WPSC Individual medals</span>
+    </nav>
+
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="/index.html"><span style="font-size: 10px;">Individual medals
+                    (Sudoku)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/countrysudoku.html"><span style="font-size: 10px;">Country medals
+                    (Sudoku)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/individualpuzzle.html"><span style="font-size: 10px;">Individual medals
+                    (Puzzle)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/countrypuzzle.html"><span style="font-size: 10px;">Country medals
+                    (Puzzle)</span></a>
+        </li>
+
+    </ul>
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">WPSC Medals</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link " href="/index.html">Individuals (Sudoku)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/countrysudoku.html">Country (Sudoku)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/individualpuzzle.html">Individuals (Puzzle)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/countrypuzzle.html">Country (Puzzle)</a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+    <!-- 
+
+    <a class="nav-link" href="/demo.html">Demo</a>
+    <a href="/index.html">Individuals(Sudoku)</a>
+    <a href="/countrysudoku.html">Country(Sudoku)</a>
+    <a href="/individualpuzzle.html">Individuals(Puzzle)</a>
+    <a href="/countrypuzzle.html">Country(Puzzle)</a> -->
+
+
+    <div class="container ">
+        <div class="jumbotron justify-content-center ">
+            <div class="container">
+                <h4 class="display-5 justify-content-center"> Total Individual Sudoku Medals in World Sudoku
+                    Championship </h4>
+                <p class="text-muted justify-content-center" style="font-size: 10px;">
+                    Note: This does not include U-18 and Over 50 medals.
+                    Total medals include Gold, Silver and Bronze.
+                    <a href="https://en.wikipedia.org/wiki/World_Sudoku_Championship" target="_blank">Source</a>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="canvas">
+        </div>
+        <div class="alert alert-light text-muted"
+            style="font-size: 8px; padding-top: 20px; text-align: center; justify-content: center;">
+            Made with <i class="fa fa-heart" style="font-size:10px;color:red"></i> by <a
+                href="https://www.linkedin.com/in/khaidemsandip/" target="_blank">Kurosaki</a>
+            <div><i class=" fa fa-linkedin" style="font-size: 10px;"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <script src="https://d3js.org/d3.v5.js"></script> -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="index.js"></script>
+
+
+
+</body>
+
+</html>

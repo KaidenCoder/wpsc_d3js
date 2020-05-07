@@ -1,0 +1,49 @@
+[{
+        "name": "USA",
+        "cost": 28
+    },
+    {
+        "name": "Argentina",
+        "cost": 1
+    },
+    {
+        "name": "Poland",
+        "cost": 1
+    },
+    {
+        "name": "Czechia",
+        "cost": 8
+    },
+    {
+        "name": "Canada",
+        "cost": 1
+    },
+    {
+        "name": "Croatia",
+        "cost": 1
+    },
+    {
+        "name": "Hungary",
+        "cost": 1
+    },
+    {
+        "name": "Turkey",
+        "cost": 1
+    },
+    {
+        "name": "Japan",
+        "cost": 16
+    },
+    {
+        "name": "Netherlands",
+        "cost": 3
+    },
+    {
+        "name": "Germany",
+        "cost": 17
+    },
+    {
+        "name": "Belgium",
+        "cost": 2
+    }
+]
